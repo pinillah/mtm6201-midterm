@@ -1,0 +1,379 @@
+/* general site font styling including to keep consistency */
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+p,
+label,
+::placeholder {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+/* general button styling for all buttons of the same class to keep consistency */
+.button {
+    background-color: #FF602C;
+    color: #ffffff;
+    padding: 1em 2em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.button:hover,
+.form button:hover {
+    background-color: #0042a1;
+    color: #ffffff;
+}
+
+/* body container styling */
+.container {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* header and logo image styling, using max width to keep the logo responsive and at a reasonable size */
+header {
+    background-color: #0042A1;
+}
+
+.logo img {
+    max-width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 4em;
+}
+
+
+/* navigation styling for mobile */
+.nav {
+    margin: 0%;
+}
+
+ul {
+    margin: 0%;
+    padding: 0;
+    list-style-type: none;
+    background-color: #1359BA;
+    color: #ffffff;
+}
+
+ul li {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    border: 0.03rem solid;
+}
+
+
+ul li:hover,
+ul li a:hover {
+    background-color: #49C6F2;
+    color: #0042A1;
+}
+
+ul li a:link,
+ul li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* main container styling */
+.page-container {
+    background-color: #ffffff;
+}
+
+/* main and article content styling */
+/* text */
+main h1 {
+    font-size: 3em;
+    line-height: 1em;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 2em;
+    line-height: 1em;
+    text-align: center;
+}
+
+main p,
+article p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+/* content display */
+main,
+article {
+    width: 90%;
+    padding: 5%;
+}
+
+article {
+    margin-bottom: 5%;
+}
+
+main img,
+article img {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.main-content,
+.services {
+    text-align: center;
+}
+
+.services {
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+
+/* image slide in + opacity animation on all website images */
+.image {
+    position: relative;
+    animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* constant button animation */
+.button {
+    animation-name: scaleButton;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* footer styling, consistent in all pages */
+footer {
+    background-color: #3c3c3c;
+    padding: 2rem;
+    line-height: 1.24rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.5em;
+}
+
+.footer-logo img {
+    max-width: 180px;
+}
+
+.fa {
+    color: #ffffff;
+    width: 50px;
+    font-size: 1.5em;
+}
+
+.intro {
+    padding-bottom: 40px;
+}
+
+.contact {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.contact h1 {
+    font-size: 1.5rem;
+}
+
+
+/* form styling to match the brand and create more user friendly fields */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-element label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-element input,
+.form-element textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-element textarea {
+    height: 150px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    background-color: #FF602C;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.form-button:hover {
+    background-color: #0042A1;
+}
+
+/* media query for bigger screens */
+@media screen and (min-width: 760px) {
+
+    .main-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo img {
+        max-width: 300px;
+        display: block;
+    }
+
+    /* uses flex to change the styling for nav */
+    nav {
+        background-color: #1359BA;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        width: 30%;
+        background-color: #1359BA;
+    }
+
+    /* removes navigation button border for larger screens to keep a minimalist style  */
+    .nav li {
+        padding-left: 30px;
+        padding-right: 30px;
+        border: none;
+    }
+
+    .main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* changes background colour and styling to create a different look for larger screens */
+    .services {
+        display: grid;
+        background-color: #0042A1;
+        color: #ffffff;
+        grid-template-columns: 50% 50%;
+    }
+
+    .services-text,
+    .founder-text {
+        max-width: 500px;
+        padding-left: 50px;
+        align-self: center;
+    }
+
+    .services .image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .story {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .story-image {
+        align-self: center;
+    }
+
+    .story-image img {
+        align-self: center;
+        height: 100%;
+    }
+
+    .story-text {
+        padding-left: 50px;
+    }
+
+    .contact-form {
+        max-width: none;
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+}
